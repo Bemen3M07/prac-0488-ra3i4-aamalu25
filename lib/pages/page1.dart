@@ -17,7 +17,7 @@ class Page1 extends StatelessWidget {
 
     String desplegableText;
     if (moto != null) {
-      desplegableText = ' ${moto.marcaModelo}'; 
+      desplegableText = moto.marcaModelo; 
     } else {
       desplegableText = 'Selecciona una moto';
     }

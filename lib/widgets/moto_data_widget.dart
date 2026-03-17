@@ -1,14 +1,11 @@
 // lib/widgets/moto_data_widget.dart
 
-import 'package:flutter/material.dart';
-
-class MotoDataWidget extends StatelessWidget {
+class MotoDataWidget {
   final String marcaModelo;
   final double fuelTankLiters;
   final double consumptionL100;
 
   const MotoDataWidget({
-    super.key,
     required this.marcaModelo,
     required this.fuelTankLiters,
     required this.consumptionL100,
@@ -20,7 +17,15 @@ class MotoDataWidget extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) {
-    return const SizedBox.shrink(); 
-  }
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is MotoDataWidget &&
+          runtimeType == other.runtimeType &&
+          marcaModelo == other.marcaModelo &&
+          fuelTankLiters == other.fuelTankLiters &&
+          consumptionL100 == other.consumptionL100;
+
+  @override
+  int get hashCode =>
+      Object.hash(marcaModelo, fuelTankLiters, consumptionL100);
 }
