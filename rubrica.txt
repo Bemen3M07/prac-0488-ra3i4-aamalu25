@@ -1,0 +1,16 @@
+CRITERIO                        | NIVEL CONSEGUIDO  | FEEDBACK
+--------------------------------|-------------------|----------------------------------------------------------------------
+Pantalla d'inici (20 pts)       | EXPERT (20/20)    |
+Anar a la segona pantalla (20)  | EXPERT (20/20)    |
+Càlcul de kilòmetres (20 pts)   | EXPERT (20/20)    |
+Tornar a la primera pantalla    | EXPERT (20/20)    |
+(20 pts)                        |                   |
+Codi Super pro (15 pts)         | AVANÇAT (10/15)   | El Provider i la logica funcionen correctament. MotoDataWidget és una
+                                |                   | classe de dades pura (no un Widget), però el nom i la ubicació
+                                |                   | (widgets/) són enganyosos. Considera moure-la a models/ i renombrar-la
+                                |                   | com a Moto o MotoModel per millorar la claredat arquitectònica.
+                                |                   | Puntuació parcial per bona estructura general però inconsistència
+                                |                   | de nomenclatura.
+Entrega (5 pts)                 | EXPERT (5/5)      |
+--------------------------------|-------------------|----------------------------------------------------------------------
+TOTAL                           | 95/100            |

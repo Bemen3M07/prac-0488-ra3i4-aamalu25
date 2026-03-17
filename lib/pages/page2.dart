@@ -59,7 +59,7 @@ class _Page2State extends State<Page2> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(' Calculo de autonomia '),
+        title: const Text('Calculo de autonomia'),
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
